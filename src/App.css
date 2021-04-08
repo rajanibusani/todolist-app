@@ -1,0 +1,185 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;    
+}
+header{
+background-color: rgb(7, 41, 70);
+  text-align: center;
+  padding: 15px 0px;
+  color:white;
+  text-transform: uppercase;
+}
+footer{
+  background-color: rgb(7, 41, 70);
+  text-align: center;
+  padding: 10px;
+  font-size:10px;
+  color:white;
+}
+.about{
+  padding: 10px;
+  font-size: 1.2em;
+}
+.about h4{
+  color:rgb(151, 23, 119);
+  text-transform: uppercase;
+  font-family: Helvetica, sans-serif;
+  margin-bottom: 5px;
+}
+.about p{
+  
+
+}
+.about h5{
+  color:green;
+  padding: 10px;
+}
+.about h5 span{
+  color:blue;
+  cursor: pointer;
+}
+.about h3{
+ color:rgb(9, 51, 90); 
+}
+
+.todo-app{
+  text-align: center;  
+  background-image: url(https://miro.medium.com/max/2625/1*E7ELZyrme5bsu3m3QeiAzw.jpeg);
+  background-repeat: no-repeat;  
+}
+.todos-container{
+  display: flex;
+  flex-direction: column;  
+  min-height: 450px;  
+}
+.todo{   
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width:50%;
+  margin: 3px auto;
+  color: rgb(37, 35, 35); 
+  padding: 10px;
+  border-radius: 5px;  
+  background: linear-gradient(
+    90deg,
+    rgba(201, 69, 17, 0.5) 0%,
+    rgba(233, 41, 7, 0.5) 100%
+  );
+}
+.todo-text{
+  display: flex;
+  width:70%;
+  justify-content: flex-start;
+  align-items: center; 
+}
+.todo-description{ 
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-start; */
+}
+.todo-description h3{
+  padding: 5px;
+  text-transform: capitalize;
+}
+.todo-description p{
+  font-size: 12px;
+}
+.todo:nth-child(4n + 1) { 
+  background: linear-gradient(
+    90deg,
+    rgba(150, 64, 145, 0.5) 0%,
+    rgba(250, 0, 135, 0.5) 100%
+  );
+}
+.todo:nth-child(4n + 2){  
+  background: linear-gradient(
+    90deg,
+    rgba(72, 204, 67, 0.5) 0%,
+    rgba(30, 77, 4, 0.904) 100%
+  );
+}
+.todo:nth-child(4n + 3) {
+  background: linear-gradient(
+    90deg,
+    rgba(20, 159, 255, 0.5) 0%,
+    rgba(17, 122, 255, 0.5) 100%
+  );
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width:20%;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.delete-icon {
+  margin-right: 5px;
+  color: #fff;
+}
+
+.edit-icon, .update-icon {
+  margin-right: 10px;
+  color: #fff;
+  margin-left: 5px;
+  
+}
+
+
+
+.add-todo input, .edit-input{
+  margin: 10px auto;
+  display: block;
+  /* padding: 14px 32px 14px 16px; */
+  border-radius: 5px;
+  border: 2px solid #03263b;
+  outline: none;
+  width: 320px;
+  background: transparent;
+  color: rgb(31, 29, 29);
+  font-size: 16px;
+  padding: 10px;
+  
+}
+.add-todo input::placeholder {
+  color: #241d1d;
+  text-transform: capitalize;
+}
+.add-todo input:focus, .edit-input:focus{
+color:white;
+background-color: rgb(130, 176, 214);
+}
+
+input[type=checkbox]:hover{
+    cursor: pointer; 
+}
+.checkedTodo {
+  text-decoration: line-through;
+  font-weight: 200;
+}
+
+.add-todo  button{
+  background-color: rgb(1, 6, 22);
+  color:white;
+  font-size: 1em;
+  padding: 8px;
+  margin-top: 5px;  
+ border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  
+}
+.add-todo button:hover{
+  border: none;
+  background-color: rgb(10, 43, 10);
+  transition: 0.5s all ease;
+}
+
